@@ -1,0 +1,25 @@
+{
+    "firestore": {
+        "rules": "firestore.rules",
+        "indexes": "firestore.indexes.json"
+    },
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "sezin-mobile",
+                    "appId": "1:403065381310:android:ccf457fcd981a69b4a59ef",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "sezin-mobile",
+                    "configurations": {
+                        "android": "1:403065381310:android:ccf457fcd981a69b4a59ef"
+                    }
+                }
+            }
+        }
+    }
+}
