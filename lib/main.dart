@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:sezin_project/shared/constants.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Supabase.initialize(
+    anonKey: Constants.spbsPublicApiKey,
+    url: Constants.spbsProjectUrl,
+  );
   runApp(const MyApp());
 }
 
